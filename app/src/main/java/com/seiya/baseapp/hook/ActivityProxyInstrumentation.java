@@ -39,6 +39,7 @@ public class ActivityProxyInstrumentation extends Instrumentation {
 
         }
 
+        return null;
 
     }
 
