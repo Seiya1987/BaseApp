@@ -8,7 +8,6 @@ import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.Logger;
 import com.seiya.base.app.BaseApplication;
 import com.seiya.base.app.GetActInterface;
-import com.seiya.list.ListInitLogic;
 
 
 
@@ -17,7 +16,6 @@ public class GankApplication extends BaseApplication implements GetActInterface 
 
     @Override
     protected void initLogic() {
-        registerApplciationLogic(ListInitLogic.class);
     }
 
     @Override
