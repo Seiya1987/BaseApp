@@ -4,9 +4,9 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.text.TextUtils;
 
+import com.seiya.net.common.ViseConfig;
 import com.vise.log.ViseLog;
 import com.vise.utils.convert.HexUtil;
-import com.vise.xsnow.common.ViseConfig;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

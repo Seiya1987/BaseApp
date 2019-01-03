@@ -1,10 +1,5 @@
 package com.seiya.net.mode;
 
-/**
- * @Description: 缓存模式
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 16/12/31 14:22.
- */
 public enum CacheMode {
     /**
      * 先请求网络，请求网络失败后再加载缓存

@@ -8,11 +8,6 @@ import java.lang.reflect.Type;
 import io.reactivex.Observable;
 import io.reactivex.functions.Predicate;
 
-/**
- * @Description: 缓存策略--缓存和网络
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 16/12/31 14:33.
- */
 public class CacheAndRemoteStrategy<T> extends CacheStrategy<T> {
     @Override
     public <T> Observable<CacheResult<T>> execute(ApiCache apiCache, String cacheKey, Observable<T> source, final Type type) {

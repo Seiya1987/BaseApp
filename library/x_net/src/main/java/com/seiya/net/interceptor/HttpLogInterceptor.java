@@ -21,11 +21,7 @@ import okhttp3.ResponseBody;
 import okhttp3.internal.http.HttpHeaders;
 import okio.Buffer;
 
-/**
- * @Description: Http日志打印拦截
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 2017-04-08 15:16
- */
+
 public class HttpLogInterceptor implements Interceptor {
     private static final Charset UTF8 = Charset.forName("UTF-8");
     private volatile Level level = Level.NONE;

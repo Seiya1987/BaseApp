@@ -18,11 +18,6 @@ import okio.ForwardingSink;
 import okio.Okio;
 import okio.Sink;
 
-/**
- * @Description: 上传进度请求实体类
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 2017-04-08 14:48
- */
 public class UploadProgressRequestBody extends RequestBody {
 
     private RequestBody requestBody;

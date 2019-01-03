@@ -1,12 +1,12 @@
 package com.seiya.net.config;
 
 import com.seiya.net.ViseHttp;
+import com.seiya.net.common.ViseConfig;
 import com.seiya.net.core.ApiCookie;
 import com.seiya.net.interceptor.GzipRequestInterceptor;
 import com.seiya.net.interceptor.OfflineCacheInterceptor;
 import com.seiya.net.interceptor.OnlineCacheInterceptor;
 import com.seiya.net.mode.ApiHost;
-import com.vise.xsnow.common.ViseConfig;
 
 import java.io.File;
 import java.net.Proxy;
@@ -24,11 +24,7 @@ import okhttp3.Interceptor;
 import retrofit2.CallAdapter;
 import retrofit2.Converter;
 
-/**
- * @Description: 请求全局配置
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 2017-04-28 17:17
- */
+
 public class HttpGlobalConfig {
     private CallAdapter.Factory callAdapterFactory;//Call适配器工厂
     private Converter.Factory converterFactory;//转换工厂

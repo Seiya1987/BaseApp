@@ -6,11 +6,6 @@ import android.os.Parcelable;
 import java.math.BigInteger;
 import java.text.NumberFormat;
 
-/**
- * @Description: 下载进度，包含总大小、下载大小
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 17/1/16 21:49.
- */
 public class DownProgress implements Parcelable {
     private long totalSize;
     private long downloadSize;

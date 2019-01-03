@@ -11,11 +11,6 @@ import java.lang.reflect.Type;
 import io.reactivex.Observable;
 import io.reactivex.observers.DisposableObserver;
 
-/**
- * @Description: Head请求
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 2017-04-28 16:07
- */
 public class HeadRequest extends BaseHttpRequest<HeadRequest> {
     public HeadRequest(String suffixUrl) {
         super(suffixUrl);

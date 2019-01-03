@@ -10,11 +10,6 @@ import io.reactivex.Observable;
 import io.reactivex.functions.Function;
 import io.reactivex.functions.Predicate;
 
-/**
- * @Description: 缓存策略--优先网络
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 16/12/31 14:32.
- */
 public class FirstRemoteStrategy<T> extends CacheStrategy<T> {
     @Override
     public <T> Observable<CacheResult<T>> execute(ApiCache apiCache, String cacheKey, Observable<T> source, Type type) {

@@ -11,11 +11,7 @@ import io.reactivex.Observable;
 import io.reactivex.ObservableSource;
 import io.reactivex.functions.Function;
 
-/**
- * @Description: 重试机制
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 2017-05-04 17:19
- */
+
 public class ApiRetryFunc implements Function<Observable<? extends Throwable>, Observable<?>> {
 
     private final int maxRetries;

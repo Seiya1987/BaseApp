@@ -5,11 +5,6 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import io.reactivex.disposables.Disposable;
 
-/**
- * @Description: 请求管理，方便中途取消请求
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 17/6/24 21:59.
- */
 public class ApiManager {
     private static ApiManager sInstance;
 

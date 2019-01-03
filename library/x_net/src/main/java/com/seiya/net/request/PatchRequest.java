@@ -11,11 +11,6 @@ import java.lang.reflect.Type;
 import io.reactivex.Observable;
 import io.reactivex.observers.DisposableObserver;
 
-/**
- * @Description: Patch请求
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 17/5/14 20:29.
- */
 public class PatchRequest extends BaseHttpRequest<PatchRequest> {
     public PatchRequest(String suffixUrl) {
         super(suffixUrl);

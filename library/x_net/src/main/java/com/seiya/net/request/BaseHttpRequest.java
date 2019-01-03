@@ -5,12 +5,12 @@ import android.text.TextUtils;
 import com.seiya.net.ViseHttp;
 import com.seiya.net.api.ApiService;
 import com.seiya.net.callback.ACallback;
+import com.seiya.net.common.ViseConfig;
 import com.seiya.net.func.ApiFunc;
 import com.seiya.net.func.ApiRetryFunc;
 import com.seiya.net.mode.ApiHost;
 import com.seiya.net.mode.CacheMode;
 import com.seiya.net.mode.CacheResult;
-import com.vise.xsnow.common.ViseConfig;
 
 import java.lang.reflect.Type;
 import java.util.LinkedHashMap;
@@ -23,11 +23,7 @@ import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
 import okhttp3.ResponseBody;
 
-/**
- * @Description: 通用的请求基类
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 17/7/22 15:23.
- */
+
 public abstract class BaseHttpRequest<R extends BaseHttpRequest> extends BaseRequest<R> {
 
     protected ApiService apiService;//通用接口服务

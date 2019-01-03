@@ -13,11 +13,6 @@ import okio.BufferedSink;
 import okio.GzipSink;
 import okio.Okio;
 
-/**
- * @Description: 包含Gzip压缩的请求拦截
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 16/12/31 21:21.
- */
 public class GzipRequestInterceptor implements Interceptor {
     @Override
     public Response intercept(@NonNull Chain chain) throws IOException {

@@ -6,12 +6,12 @@ import android.text.TextUtils;
 
 import com.seiya.net.ViseHttp;
 import com.seiya.net.callback.ACallback;
+import com.seiya.net.common.ViseConfig;
 import com.seiya.net.core.ApiManager;
 import com.seiya.net.func.ApiRetryFunc;
 import com.seiya.net.mode.CacheResult;
 import com.seiya.net.mode.DownProgress;
 import com.seiya.net.subscriber.DownCallbackSubscriber;
-import com.vise.xsnow.common.ViseConfig;
 
 import org.reactivestreams.Publisher;
 

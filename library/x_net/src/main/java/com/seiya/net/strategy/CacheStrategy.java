@@ -1,9 +1,9 @@
 package com.seiya.net.strategy;
 
+import com.seiya.net.common.GsonUtil;
 import com.seiya.net.core.ApiCache;
 import com.seiya.net.mode.CacheResult;
 import com.vise.log.ViseLog;
-import com.vise.xsnow.common.GsonUtil;
 
 import java.lang.reflect.Type;
 
@@ -13,11 +13,7 @@ import io.reactivex.functions.Function;
 import io.reactivex.functions.Predicate;
 import io.reactivex.schedulers.Schedulers;
 
-/**
- * @Description: 缓存策略
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 16/12/31 14:28.
- */
+
 abstract class CacheStrategy<T> implements ICacheStrategy<T> {
     <T> Observable<CacheResult<T>> loadCache(final ApiCache apiCache, final String key, final Type type) {
         return apiCache.<T>get(key).filter(new Predicate<String>() {

@@ -3,19 +3,15 @@ package com.seiya.net.interceptor;
 import android.support.annotation.NonNull;
 import android.text.TextUtils;
 
+import com.seiya.net.common.ViseConfig;
 import com.vise.log.ViseLog;
-import com.vise.xsnow.common.ViseConfig;
 
 import java.io.IOException;
 
 import okhttp3.Interceptor;
 import okhttp3.Response;
 
-/**
- * @Description: 在线缓存拦截
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 16/12/31 22:23.
- */
+
 public class OnlineCacheInterceptor implements Interceptor {
     private String cacheControlValue;
 

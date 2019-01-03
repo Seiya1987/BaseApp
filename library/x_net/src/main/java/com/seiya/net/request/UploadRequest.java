@@ -29,11 +29,6 @@ import okio.BufferedSink;
 import okio.Okio;
 import okio.Source;
 
-/**
- * @Description: 上传请求
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 17/5/14 20:28.
- */
 public class UploadRequest extends BaseHttpRequest<UploadRequest> {
 
     protected List<MultipartBody.Part> multipartBodyParts = new ArrayList<>();

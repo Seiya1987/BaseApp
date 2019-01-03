@@ -8,11 +8,6 @@ import okhttp3.Interceptor;
 import okhttp3.Request;
 import okhttp3.Response;
 
-/**
- * @Description: 无缓存拦截
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 16/12/31 21:17.
- */
 public class NoCacheInterceptor implements Interceptor {
 
     @Override

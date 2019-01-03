@@ -1,10 +1,6 @@
 package com.seiya.net.mode;
 
-/**
- * @Description: 网络通用状态码定义
- * @author: <a href="http://xiaoyaoyou1212.360doc.com">DAWI</a>
- * @date: 2016-12-30 18:11
- */
+
 public class ApiCode {
 
     /**

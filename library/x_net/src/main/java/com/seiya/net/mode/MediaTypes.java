@@ -2,11 +2,7 @@ package com.seiya.net.mode;
 
 import okhttp3.MediaType;
 
-/**
- * @Description: MediaType汇总
- * @author: <a href="http://xiaoyaoyou1212.360doc.com">DAWI</a>
- * @date: 2017/5/17 20:41
- */
+
 public class MediaTypes {
     public static final MediaType APPLICATION_ATOM_XML_TYPE = MediaType.parse("application/atom+xml;charset=utf-8");
     public static final MediaType APPLICATION_FORM_URLENCODED_TYPE = MediaType.parse("application/x-www-form-urlencoded;charset=utf-8");

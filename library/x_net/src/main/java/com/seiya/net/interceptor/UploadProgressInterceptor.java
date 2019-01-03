@@ -11,11 +11,7 @@ import okhttp3.Interceptor;
 import okhttp3.Request;
 import okhttp3.Response;
 
-/**
- * @Description: 上传进度拦截
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 2017-04-08 15:10
- */
+
 public class UploadProgressInterceptor implements Interceptor {
 
     private UCallback callback;

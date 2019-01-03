@@ -20,11 +20,6 @@ import io.reactivex.observers.DisposableObserver;
 import okhttp3.MediaType;
 import okhttp3.RequestBody;
 
-/**
- * @Description: Post请求
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 2017-04-28 16:06
- */
 public class PostRequest extends BaseHttpRequest<PostRequest> {
 
     protected Map<String, Object> forms = new LinkedHashMap<>();

@@ -17,11 +17,6 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TimeZone;
 
-/**
- * @Description: 请求头封装
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 17/5/1 21:03.
- */
 public class HttpHeaders implements Serializable {
     private static final String FORMAT_HTTP_DATA = "EEE, dd MMM y HH:mm:ss 'GMT'";
     private static final TimeZone GMT_TIME_ZONE = TimeZone.getTimeZone("GMT");

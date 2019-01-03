@@ -9,11 +9,6 @@ import io.reactivex.ObservableTransformer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
 
-/**
- * @Description: 转换器
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 17/7/22 22:11.
- */
 public class ApiTransformer {
 
     public static <T> ObservableTransformer<T, T> norTransformer() {

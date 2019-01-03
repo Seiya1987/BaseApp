@@ -2,6 +2,7 @@ package com.seiya.net.request;
 
 import com.seiya.net.ViseHttp;
 import com.seiya.net.callback.UCallback;
+import com.seiya.net.common.ViseConfig;
 import com.seiya.net.config.HttpGlobalConfig;
 import com.seiya.net.core.ApiCookie;
 import com.seiya.net.interceptor.HeadersInterceptor;
@@ -10,7 +11,6 @@ import com.seiya.net.mode.ApiHost;
 import com.seiya.net.mode.HttpHeaders;
 import com.vise.log.ViseLog;
 import com.vise.utils.assist.SSLUtil;
-import com.vise.xsnow.common.ViseConfig;
 
 import java.io.File;
 import java.lang.reflect.ParameterizedType;
@@ -28,11 +28,6 @@ import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-/**
- * @Description: 请求基类
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 2017-04-28 16:05
- */
 public abstract class BaseRequest<R extends BaseRequest> {
     protected HttpGlobalConfig httpGlobalConfig;//全局配置
     protected Retrofit retrofit;//Retrofit对象

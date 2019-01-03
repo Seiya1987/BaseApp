@@ -2,13 +2,13 @@ package com.seiya.net.core;
 
 import android.content.Context;
 
+import com.seiya.net.cache.DiskCache;
+import com.seiya.net.common.ViseConfig;
 import com.seiya.net.mode.ApiHost;
 import com.seiya.net.mode.CacheMode;
 import com.seiya.net.mode.CacheResult;
 import com.seiya.net.strategy.ICacheStrategy;
 import com.vise.log.ViseLog;
-import com.vise.xsnow.cache.DiskCache;
-import com.vise.xsnow.common.ViseConfig;
 
 import java.io.File;
 import java.lang.reflect.Type;
@@ -23,11 +23,6 @@ import io.reactivex.exceptions.Exceptions;
 import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 
-/**
- * @Description: 针对响应数据进行缓存管理
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 16/12/31 14:27.
- */
 public class ApiCache {
     private final DiskCache diskCache;
     private String cacheKey;

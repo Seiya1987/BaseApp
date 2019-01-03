@@ -23,11 +23,7 @@ import retrofit2.http.QueryMap;
 import retrofit2.http.Streaming;
 import retrofit2.http.Url;
 
-/**
- * @Description: 提供的系列接口
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 2016-12-30 16:42
- */
+
 public interface ApiService {
     @GET()
     Observable<ResponseBody> get(@Url String url, @QueryMap Map<String, String> maps);

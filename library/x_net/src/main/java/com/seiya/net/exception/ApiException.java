@@ -12,11 +12,6 @@ import java.net.SocketTimeoutException;
 
 import retrofit2.HttpException;
 
-/**
- * @Description: API异常统一管理
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 2016-12-30 17:59
- */
 public class ApiException extends Exception {
 
     private final int code;

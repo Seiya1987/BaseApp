@@ -1,12 +1,8 @@
 package com.seiya.net.mode;
 
-import com.vise.xsnow.common.ViseConfig;
+import com.seiya.net.common.ViseConfig;
 
-/**
- * @Description: 主机信息
- * @author: <a href="http://www.xiaoyaoyou1212.com">DAWI</a>
- * @date: 2017-01-06 10:37
- */
+
 public class ApiHost {
 
     private static String host = ViseConfig.API_HOST;
