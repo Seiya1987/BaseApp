@@ -1,15 +1,36 @@
 package com.seiya.image;
 
-public class PicassoLoader implements ILoaderStrategy {
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffXfermode;
+import android.graphics.Rect;
+import android.graphics.RectF;
+import android.graphics.drawable.Drawable;
+import android.widget.ImageView;
+
+import com.seiya.base.app.BaseApplication;
+import com.squareup.picasso.LruCache;
+import com.squareup.picasso.MemoryPolicy;
+import com.squareup.picasso.NetworkPolicy;
+import com.squareup.picasso.Picasso;
+import com.squareup.picasso.RequestCreator;
+import com.squareup.picasso.Target;
+import com.squareup.picasso.Transformation;
+
+public class PicassoLoaderStrategy implements ILoaderStrategy {
 	private volatile static Picasso sPicassoSingleton;
 	private final String PICASSO_CACHE = "picasso-cache";
-	private static LruCache sLruCache = new LruCache(App.gApp);
+	private static LruCache sLruCache =  new LruCache(BaseApplication.getApplication().getApplicationContext());
+	private Context mContext;
 
 	private static Picasso getPicasso() {
 		if (sPicassoSingleton == null) {
-			synchronized (PicassoLoader.class) {
+			synchronized (PicassoLoaderStrategy.class) {
 				if (sPicassoSingleton == null) {
-					sPicassoSingleton = new Picasso.Builder(App.gApp).memoryCache(sLruCache).build();
+					sPicassoSingleton = new Picasso.Builder(BaseApplication.getApplication().getApplicationContext()).memoryCache(sLruCache).build();
 				}
 			}
 		}
@@ -23,11 +44,11 @@ public class PicassoLoader implements ILoaderStrategy {
 
 	@Override
 	public void clearDiskCache() {
-		File diskFile = new File(App.gApp.getCacheDir(), PICASSO_CACHE);
-		if (diskFile.exists()) {
+//		File diskFile = new File(App.gApp.getCacheDir(), PICASSO_CACHE);
+//		if (diskFile.exists()) {
 			//这边自行写删除代码
 //	        FileUtil.deleteFile(diskFile);
-		}
+//		}
 	}
 
 	@Override
